@@ -21,3 +21,33 @@ The container has basic build tools installed:
 - libc6-dev
 - GNU C Library: Development Libraries and Header Files or libc-dev
 - make
+
+Compiling and debugging the example program called *leak*:
+```
+root@d3e8ebc051b8:/valgrind# make && valgrind ./leak
+g++    -c -o leak.o leak.cpp
+g++ -o leak leak.o
+==19== Memcheck, a memory error detector
+==19== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==19== Command: ./leak
+==19== 
+0
+1
+2
+==19== 
+==19== HEAP SUMMARY:
+==19==     in use at exit: 24 bytes in 1 blocks
+==19==   total heap usage: 3 allocs, 2 frees, 73,752 bytes allocated
+==19== 
+==19== LEAK SUMMARY:
+==19==    definitely lost: 24 bytes in 1 blocks
+==19==    indirectly lost: 0 bytes in 0 blocks
+==19==      possibly lost: 0 bytes in 0 blocks
+==19==    still reachable: 0 bytes in 0 blocks
+==19==         suppressed: 0 bytes in 0 blocks
+==19== Rerun with --leak-check=full to see details of leaked memory
+==19== 
+==19== For counts of detected and suppressed errors, rerun with: -v
+==19== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
