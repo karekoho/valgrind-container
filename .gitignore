@@ -1,2 +1,3 @@
 test/leak
 .vscode/
+test/leak.o
