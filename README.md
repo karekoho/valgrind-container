@@ -11,7 +11,7 @@ The command above starts an interactive session with the container:
 ```
 root@e5215faf4f73:/valgrind# 
 ```
-You should now compile your project for the container's platform (x86_64) and run valgrind as usual.
+You should now compile your project for the container's platform (x86_64) and run Valgrind as usual.
 The container has basic build tools installed:
 - dpkg-dev (>= 1.17.11)
 - g++ (>= 4:5.2)
