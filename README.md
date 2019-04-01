@@ -1,5 +1,5 @@
 ## Run Valgrind in a container
-Valgrind may be difficult if not impossible to install for **macOS**, and if succesfully installed it may not run properly or may not run at all.
+Valgrind may be difficult if not impossible to install for macOS, and if succesfully installed it may not run properly or may not run at all.
 A workaround for this is to run Valgrind in a Linux container. Some extra work is required, such as compilation for the container's platform,
 but what you do get is a properly running Valgrind.
 ### Usage
