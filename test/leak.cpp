@@ -2,9 +2,6 @@
 //  leak.cpp
 //  leak
 //
-//  Created by Kare Koho on 17/03/2019.
-//  Copyright © 2019 Kare Koho. All rights reserved.
-//
 
 #include <iostream>
 
