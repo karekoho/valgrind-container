@@ -27,7 +27,7 @@ The container has basic build tools installed:
 
 [Google Test](https://github.com/google/googletest) is installed in */usr/local/src/googletest/googletest*
 
-[An sample Makefile](https://github.com/google/googletest/blob/master/googletest/make/Makefile) demonstrates how to compile unit tests with Google Test.
+There is a sample [Makefile](https://github.com/google/googletest/blob/master/googletest/make/Makefile) demonstrating how to compile unit tests with Google Test.
 
 #### A Memory debugging example
 
