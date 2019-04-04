@@ -7,7 +7,7 @@ but what you do get is a properly running Valgrind.
 ### Usage
 Run the container:
 ```sh
-docker run -ti -v $PWD/path/to/my/files:/valgrind karek/valgrind:latest
+docker run -tiv $PWD/path/to/my/files:/valgrind karek/valgrind:latest
 ```
 The command above starts an interactive session with the container:
 ```
@@ -23,6 +23,9 @@ The container has basic build tools installed:
 - libc6-dev
 - GNU C Library: Development Libraries and Header Files or libc-dev
 - make
+- cmake
+
+Google Test (https://github.com/google/googletest) is compiled to two static libraries gtest.a and gtest_main.a in /usr/local/lib
 
 Compiling and debugging the example program called *leak*:
 ```
