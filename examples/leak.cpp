@@ -11,7 +11,7 @@ main (void)
     {
       *(n + idx) = idx;
       std::cout << *(n + idx) << std::endl;
-  }
+    }
   // free ((void *) n);
   return 0;
 }
