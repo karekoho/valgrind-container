@@ -25,8 +25,9 @@ The container has basic build tools installed:
 - make
 - cmake
 
-Google Test (https://github.com/google/googletest) is installed in */usr/local/src/googletest/googletest* 
-See https://github.com/google/googletest/blob/master/googletest/make/Makefile for example to compile unit tests with Google Test 
+Google Test (https://github.com/google/googletest) is installed in */usr/local/src/googletest/googletest*
+
+See https://github.com/google/googletest/blob/master/googletest/make/Makefile for an example to compile unit tests with Google Test 
 
 Compiling and debugging the example program called *leak*:
 ```
