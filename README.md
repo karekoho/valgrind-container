@@ -35,7 +35,7 @@ Start the container with:
 ```
 docker run -tiv $PWD/examples:/valgrind karek/valgrind:latest
 ```
-Once in the container, compile the *leak.cpp* and run it in Valgrind:
+Once in the container, compile *leak.cpp* and run it in Valgrind:
 ```
 root@d3e8ebc051b8:/valgrind# make && valgrind ./leak
 g++    -c -o leak.o leak.cpp
