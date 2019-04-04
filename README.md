@@ -1,5 +1,5 @@
 ## Run Valgrind in a container
-Valgrind (http://valgrind.org/) may be difficult if not impossible to install on macOS (X86/Darwin (> 10.10, 10.11), AMD64/Darwin (> 10.10, 10.11)), 
+[Valgrind](http://valgrind.org/) may be difficult if not impossible to install on macOS (X86/Darwin (> 10.10, 10.11), AMD64/Darwin (> 10.10, 10.11)), 
 and if succesfully installed it may not run properly or may not run at all.
 
 A workaround for this is to run Valgrind in a Linux container. Some extra work is required, such as compilation for the container's platform,
@@ -25,11 +25,11 @@ The container has basic build tools installed:
 - make
 - cmake
 
-Google Test (https://github.com/google/googletest) is installed in */usr/local/src/googletest/googletest*
+[Google Test](https://github.com/google/googletest) is installed in */usr/local/src/googletest/googletest*
 
-See https://github.com/google/googletest/blob/master/googletest/make/Makefile for an example how to compile unit tests with Google Test.
+[An sample Makefile](https://github.com/google/googletest/blob/master/googletest/make/Makefile) demonstrates how to compile unit tests with Google Test.
 
-#### Memory debugging example
+#### A Memory debugging example
 
 Start the container with:
 ```
