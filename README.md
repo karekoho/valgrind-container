@@ -5,15 +5,16 @@ and if succesfully installed it may not run properly or may not run at all.
 A workaround for this is to run Valgrind in a Linux container. Some extra work is required, such as compilation for the container's platform,
 but what you do get is a properly running Valgrind.
 ### Usage
-Run the container:
+First, start the container so that your source code is bind mounted in the container,
+and also an interactive session is started:
 ```sh
 docker run -tiv $PWD/path/to/my/files:/valgrind karek/valgrind:latest
 ```
-The command above starts an interactive session with the container:
-```
+After starting the container, your terminal should look something like this:
+```sh
 root@e5215faf4f73:/valgrind# 
 ```
-You should now compile your project for the container's platform (x86_64) and run Valgrind as usual.
+Now you may compile your projact as usual, but for the container's platform (x86_64).
 The container has basic build tools installed:
 - dpkg-dev (>= 1.17.11)
 - g++ (>= 4:5.2)
@@ -24,6 +25,11 @@ The container has basic build tools installed:
 - GNU C Library: Development Libraries and Header Files or libc-dev
 - make
 - cmake
+
+Run valgrind as usual:
+```sh
+root@e5215faf4f73:/valgrind# valgrind ./your_executable
+```
 
 [Google Test](https://github.com/google/googletest) is cloned in */usr/local/src/googletest/googletest*
 and pre-compiled to two static libraries *libgtest*.a and *libgtest_main.a* in */usr/local/lib*
